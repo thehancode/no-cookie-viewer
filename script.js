@@ -17,7 +17,7 @@ videoInput.addEventListener('keypress', function(event) {
 
     const videoCode = getYouTubeVideoCode(textInput)
     // Construct the new source URL
-    const newSrc = `https://www.youtube-nocookie.com/embed/${videoCode}`;
+    const newSrc = `https://www.youtube-nocookie.com/embed/${videoCode}?rel=0`;
 
     // Update the iframe src attribute
     videoIframe.src = newSrc;

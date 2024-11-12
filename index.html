@@ -20,6 +20,7 @@
       font-family: Arial, sans-serif;
     }
 
+
     /* Full-width input style */
     #videoInput {
       width: 100%;
@@ -39,6 +40,10 @@
       max-width: 100%;
       border: none;
     }
+
+    .invert-color {
+      filter: invert(1) hue-rotate(180deg);
+    }
   </style>
 </head>
 
@@ -46,9 +51,15 @@
   <input type="text" id="videoInput" placeholder="Enter video link or ID and press Enter">
   <iframe id="videoFrame" width="1440" height="762" src="https://www.youtube-nocookie.com/embed/U8XENwh8Oy8"
     allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+  <label>
+    <input type="checkbox" id="invertToggle">
+    Enable Invert Color
+  </label>
   <script src="script.js">
   </script>
-</body>
+
+  <script src="toggle.js">
+  </script>
 
 </html>
+</body>

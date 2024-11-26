@@ -1,13 +1,13 @@
 # YT-no-cookie viewer
 <div align="center">
   <p>
-    <a href="https://github.com/thehancode/no-cookie-viewer/">
+    <a href="https://thehancode.github.io/no-cookie-viewer/">
       <img src="./logo.png" width="140" alt="no-cookie-viewer" />
     </a>
   </p>
   <p>
     <a 
-      href="https://github.com/thehancode/no-cookie-viewer/" 
+      href="https://thehancode.github.io/no-cookie-viewer/" 
       style="
         display: inline-block;
         padding: 10px 20px;

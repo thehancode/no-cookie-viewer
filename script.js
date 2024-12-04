@@ -19,11 +19,9 @@ videoInput.addEventListener('keypress', function(event) {
 });
 
 function loadVideo(videoCode) {
-  console.log(" starting Loading video with code:", videoCode);
   const videoIframe = document.querySelector('iframe');
   const newSrc = `https://www.youtube-nocookie.com/embed/${videoCode}?rel=0`;
   videoIframe.src = newSrc;
-  console.log("Loading video with code:", videoCode);
 }
 
 // Example usage: When the page loads, check if a video code is present

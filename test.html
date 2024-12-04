@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mocha Tests</title>
+  <!-- Mocha CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css" />
+</head>
+
+<body>
+  <!-- Mocha Test Results -->
+  <div id="mocha"></div>
+
+  <!-- Your Application Scripts -->
+  <script src="utils.js"></script>
+  <!-- Mocha and Chai Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js"></script>
+  <!-- Initialize Mocha -->
+  <script>
+    mocha.setup('bdd'); // Use BDD style (describe, it, etc.)
+    const assert = chai.assert; // Use Chai's assert style
+  </script>
+
+  <!-- Your Test Scripts -->
+  <script src="test.js"></script>
+
+  <!-- Run Mocha -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>

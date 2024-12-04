@@ -1,12 +1,6 @@
 // Get references to the input and iframe elements
 const videoInput = document.getElementById('videoInput');
 
-function getYouTubeVideoCode(url) {
-  // Use a regular expression to match the last part of the URL that isn't a query parameter
-  const match = url.match(/(?:\/|v=|\/shorts\/)([a-zA-Z0-9_-]{11})(?:\?|$)/);
-  return match ? match[1] : null;
-}
-
 // Add event listener for the Enter key
 videoInput.addEventListener('keypress', function(event) {
   // Check if the pressed key is Enter
